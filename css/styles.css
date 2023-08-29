@@ -37,6 +37,7 @@ body {
 }
 .container .wrapper .left-section img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .container .wrapper .right-section {
@@ -92,4 +93,45 @@ body {
 }
 .container .wrapper .socials ion-icon:active {
   transform: translate(2px, 5px);
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 90%;
+  }
+  .container .logo img {
+    width: 15rem;
+  }
+  .container .wrapper {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .container .wrapper .left-section {
+    margin-bottom: 5rem;
+  }
+  .container .wrapper .left-section img {
+    width: 100%;
+  }
+  .container .wrapper .right-section {
+    text-align: center;
+  }
+  .container .wrapper .right-section .title {
+    font-size: 2.4rem;
+  }
+  .container .wrapper .right-section .desc {
+    font-size: 1.5rem;
+  }
+  .container .wrapper .right-section .btn {
+    padding: 1.2rem 8rem;
+  }
+  .container .wrapper .socials {
+    bottom: -7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: -2rem;
+  }
+  .container .wrapper .socials ion-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
 }
