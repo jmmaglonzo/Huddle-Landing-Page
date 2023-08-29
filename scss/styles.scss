@@ -1,0 +1,92 @@
+@import "configs";
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+
+  .logo {
+    padding: 3rem 0;
+
+    img {
+      width: 25rem;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+    column-gap: 5rem;
+    position: relative;
+    .left-section {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .right-section {
+      color: #fff;
+
+      .title {
+        font-family: "Poppins", sans-serif;
+        font-size: 5.2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+
+      .desc {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        padding: 1.2rem 5rem;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        color: $Violet;
+        font-weight: $font400;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          background-color: $SoftMagenta;
+          color: #fff;
+        }
+
+        &:active {
+          transform: translate(2px, 5px);
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      ion-icon {
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          color: $SoftMagenta;
+          border-color: $SoftMagenta;
+        }
+
+        &:active {
+          transform: translate(2px, 5px);
+        }
+      }
+    }
+  }
+}

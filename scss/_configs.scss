@@ -1,0 +1,26 @@
+// PRIMARY COLORS
+$Violet: hsl(257, 40%, 49%);
+$SoftMagenta: hsl(300, 69%, 71%);
+
+// Heading font
+$font400: 400;
+$font600: 600;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-image: url(/images/bg-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $Violet;
+  font-family: "Open Sans", sans-serif;
+}
