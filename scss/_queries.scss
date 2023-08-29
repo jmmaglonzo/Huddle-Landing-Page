@@ -1,0 +1,48 @@
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 90%;
+
+    .logo img {
+      width: 15rem;
+    }
+
+    .wrapper {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+
+      .left-section {
+        img {
+          width: 100%;
+        }
+        margin-bottom: 5rem;
+      }
+
+      .right-section {
+        text-align: center;
+        .title {
+          font-size: 2.4rem;
+        }
+
+        .desc {
+          font-size: 1.5rem;
+        }
+
+        .btn {
+          padding: 1.2rem 8rem;
+        }
+      }
+
+      .socials {
+        bottom: -7rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -2rem;
+
+        ion-icon {
+          font-size: 2rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
